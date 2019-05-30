@@ -7,21 +7,23 @@
   &__info
     display: flex
     align-items: center
-    text-align: right
-    
+  
   &__address
-    display: flex
+    display: block
     flex-direction: columns
+    font-size: 13px
+    text-align: right
   &__button
     margin-left: 30px
-    font-weight: 600
+    font-size: 13px
+    +bold
   &__phone
     display: inline-block
     color: $text-color
     font-size: 20px
-    font-weight: 600
     text-decoration: none
     margin-top: 10px
+    +bold
 @media (max-width:720px)
   .navbar
     &__contacts
