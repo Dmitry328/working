@@ -297,6 +297,11 @@ img {
   margin-bottom: 30px;
 }
 
+.offer__input:focus {
+  border: 1px solid #ffd200;
+  outline: none;
+}
+
 .offer__input:first-child {
   margin-right: 10px;
 }
