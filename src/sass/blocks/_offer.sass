@@ -1,6 +1,6 @@
 .offer
   background: url('../img/offer/offer-bg.png') no-repeat 
-  background-position: center right
+  background-position: right
   background-size: contain
   position: relative
   +reg
@@ -51,12 +51,23 @@
     color: $text-color
     +bold
 
-    
 @media (max-width:1140px)
   .offer
+    background-size: cover
     &__input
       width: 100%
       margin-bottom: 8px
+      padding-right: 40px
+      
+@media (max-width:960px)
+  .offer
+    &__bottom-title
+      display: block
+    &__left-text
+      display: block
+      margin-bottom: 18px
+      margin-right: 10px
+
 @media (max-width:720px)
   .offer
     background: $white-color
@@ -67,10 +78,6 @@
       line-height: 1.2
     &__button
       font-size: 14px
-    &__bottom-title
-      display: block
-    &__left-text
-      display: block
-      margin-bottom: 18px
+
       
 

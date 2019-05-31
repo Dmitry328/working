@@ -252,7 +252,7 @@ img {
 
 .offer {
   background: url("../img/offer/offer-bg.png") no-repeat;
-  background-position: center right;
+  background-position: right;
   background-size: contain;
   position: relative;
   font-family: 'Museo Sans Light', sans-serif;
@@ -333,9 +333,24 @@ img {
 }
 
 @media (max-width: 1140px) {
+  .offer {
+    background-size: cover;
+  }
   .offer__input {
     width: 100%;
     margin-bottom: 8px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .offer__bottom-title {
+    display: block;
+  }
+  .offer__left-text {
+    display: block;
+    margin-bottom: 18px;
+    margin-right: 10px;
   }
 }
 
@@ -352,13 +367,6 @@ img {
   }
   .offer__button {
     font-size: 14px;
-  }
-  .offer__bottom-title {
-    display: block;
-  }
-  .offer__left-text {
-    display: block;
-    margin-bottom: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
