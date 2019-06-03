@@ -68,12 +68,20 @@ img {
   padding: 90px 0;
 }
 
+.section-title {
+  text-align: center;
+}
+
 .input {
   border: 1px solid #dddddd;
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
   color: #999999;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 .navbar {
@@ -284,6 +292,7 @@ img {
   max-width: 350px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
   font-family: 'Museo Sans Bold';
   font-weight: 700;
 }
@@ -379,6 +388,46 @@ img {
   }
 }
 
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  margin: auto;
+  margin-bottom: 100px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 68px;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+@media (max-width: 960px) {
+  .section {
+    padding-top: 43px;
+  }
+  .portfolio__title {
+    margin-bottom: 40px;
+  }
+  .portfolio__arrows {
+    margin-top: 48px;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
@@ -409,5 +458,9 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-dialog__close:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
