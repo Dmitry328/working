@@ -49,7 +49,7 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -66,7 +66,7 @@ img {
 
 .section-title {
   text-align: center;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -82,8 +82,17 @@ img {
   color: #999999;
 }
 
+.input:focus {
+  border: 1px solid #ffd200;
+  outline: none;
+}
+
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
+}
+
+.errors {
+  border: 1px solid red;
 }
 
 .navbar {
@@ -132,7 +141,7 @@ img {
   font-size: 20px;
   text-decoration: none;
   margin-top: 10px;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -173,7 +182,7 @@ img {
   margin-bottom: 40px;
   font-size: 41px;
   line-height: 55px;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -181,7 +190,7 @@ img {
   display: inline-block;
   font-size: 20px;
   margin-bottom: 65px;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -297,7 +306,7 @@ img {
   line-height: 35px;
   margin-bottom: 20px;
   text-align: left;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -312,11 +321,6 @@ img {
 .offer__input {
   width: 240px;
   margin-bottom: 30px;
-}
-
-.offer__input:focus {
-  border: 1px solid #ffd200;
-  outline: none;
 }
 
 .offer__input:first-child {
@@ -352,7 +356,7 @@ img {
 .offer__phone {
   text-decoration: none;
   color: #333333;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -404,7 +408,7 @@ img {
   margin-bottom: 100px;
   font-size: 30px;
   line-height: 45px;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -513,7 +517,7 @@ img {
 .card__link {
   display: inline-block;
   margin-bottom: 10px;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #333333;
@@ -667,6 +671,203 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+.brif {
+  background-image: url("../img/brif/background-color-bg.jpg"), url("../img/brif/background-bg.jpg");
+  background-position: left center, right center;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 200px;
+  text-align: center;
+}
+
+.brif__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 15px;
+}
+
+.brif__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 33px;
+  margin-top: 15px;
+}
+
+.interview {
+  padding-right: 70px;
+}
+
+.interview__title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.interview__subtitle {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 95px;
+}
+
+.interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.interview-list__text {
+  max-width: 400px;
+}
+
+.form__title {
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 52px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.form__subtitle {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.form__description {
+  display: block;
+  margin-bottom: 93px;
+}
+
+@media (max-width: 1140px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .brif__button {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    max-width: 290px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+  .form__title {
+    font-size: 20px;
+    margin-bottom: 47px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+  .form__description {
+    display: block;
+  }
+}
+
+@media (max-width: 720px) {
+  .brif {
+    background-image: url("../img/brif/background-color-bg.jpg"), url("../img/brif/background-bg.jpg");
+    background-position: top center, bottom center;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif__interview {
+    padding-right: 15px;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
+  .brif__button {
+    font-size: 14px;
+    margin-bottom: 31px;
+  }
+  .interview__title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    line-height: 25.35px;
+  }
+  .interview__subtitle {
+    margin-bottom: 39px;
+    font-size: 14px;
+  }
+  .interview-list__counter {
+    min-width: 35px;
+    min-height: 35px;
+  }
+  .form__title {
+    font-size: 18px;
+    margin-bottom: 27px;
+    line-height: 25.35px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+    margin-bottom: 34px;
+  }
+  .form__description {
+    font-size: 14px;
+    margin-bottom: 34px;
   }
 }
 
