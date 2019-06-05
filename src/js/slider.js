@@ -1,37 +1,59 @@
 $(document).ready(function(){
+    //Маска для телефона
+  $(".phone").mask("+375 (99) 999-99-99");
   //Валидация формы brif
   $('#brif-form').validate({
     rules: {
-      username:{
+      phone: {
         required: true,
       },
-      phone:{
+      username: {
         required: true,
-        minlength: 12,
-      }
+        minlength: 2,
+        maxlength: 15,
+      },
+      email: {
+        recuired: true,
+        email: true,
+      },
     },
     messages: {
-      username: "Укажите имя",
-      phone: "Введите телефон"
+      phone: {
+        required: "Укажите телефон",
+      },
+      username: {
+        required: "Обязательное поле",
+        minlength: jQuery.validator.format("Минимальное кол-во символов: {0}"),
+      },
+      email: {
+        required: "Обязательное поле",
+        email: "Введите корректный email",
+      }
     }
   });
-  //Валидация формы offer
-  $('#offer-form').validate({
-    rules: {
-      username:{
-        required: true,
-      },
-      phone:{
-        required: true,
-        tel: true
-      }
-    },
-    // messages: {
-    //   username: "Укажите имя",
-    //   phone: "Введите телефон"
-    // }
-  });
-  //Скрипт слайдера
+  // //Валидация формы offer
+  // $('#offer-form').validate({
+  //   rules: {
+  //     phone: {
+  //       required: true
+  //     },
+  //     username: {
+  //       required: true,
+  //       minlength: 2,
+  //       maxlength: 15
+  //     }
+  //   },
+  //   messages: {
+  //     phone: {
+  //       required: "Укажите телефон"
+  //     },
+  //     username: {
+  //       required: "Обязательное поле",
+  //       minlength: jQuery.validator.format("Минимальное кол-во символов: {0}")
+  //     }
+  //   }
+  // });
+    //Скрипт слайдера
   $('.slider').slick({ 
     slidesToShow: 3,
     slidesToScroll: 1,
