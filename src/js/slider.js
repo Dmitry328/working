@@ -13,9 +13,9 @@ $(document).ready(function(){
         maxlength: 15,
       },
       email: {
-        recuired: true,
+        required: true,
         email: true,
-      },
+      }
     },
     messages: {
       phone: {
@@ -31,25 +31,25 @@ $(document).ready(function(){
       }
     }
   });
-  // //Валидация формы offer
+  //Валидация формы offer
   // $('#offer-form').validate({
   //   rules: {
   //     phone: {
-  //       required: true
+  //       required: true,
   //     },
   //     username: {
   //       required: true,
   //       minlength: 2,
-  //       maxlength: 15
+  //       maxlength: 15,
   //     }
   //   },
   //   messages: {
   //     phone: {
-  //       required: "Укажите телефон"
+  //       required: "Укажите телефон",
   //     },
   //     username: {
   //       required: "Обязательное поле",
-  //       minlength: jQuery.validator.format("Минимальное кол-во символов: {0}")
+  //       minlength: jQuery.validator.format("Минимальное кол-во символов: {0}"),
   //     }
   //   }
   // });
