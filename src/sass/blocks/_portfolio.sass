@@ -2,7 +2,7 @@
   background: $hero-color url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left 
   background-size: 50%
   &__title
-    margin: auto
+    // margin: auto
     margin-bottom: 100px
     font-size: 30px
     line-height: 45px
@@ -26,6 +26,20 @@
       margin-bottom: 40px
     &__arrows
       margin-top: 48px
+@media (max-width:720px)
+  .container
+    // width: 280px
+  .portfolio
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      // width: 290px
+    &-section
+      padding: 0
+      padding-top: 43px
+    &__arrows
+      padding-bottom: 64px
+    
 
 
     

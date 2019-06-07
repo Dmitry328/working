@@ -34,20 +34,20 @@ $(document).ready(function(){
   //Валидация формы offer
   $('#offer-form').validate({
     rules: {
-      phone: {
+       offerPhone: {
         required: true,
       },
-      username: {
+       offerUsername: {
         required: true,
         minlength: 2,
         maxlength: 15,
       }
     },
     messages: {
-      phone: {
+      offerPhone: {
         required: "Введите телефон",
       },
-      username: {
+      offerUsername: {
         required: "Заполните поле",
         minlength: jQuery.validator.format("Минимальное кол-во символов: {0}"),
       }

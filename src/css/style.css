@@ -361,14 +361,14 @@ img {
   font-weight: 700;
 }
 
-#username-error {
+#offerUsername-error {
   position: absolute;
   bottom: 148px;
   left: 0;
   font-size: 15px;
 }
 
-#phone-error {
+#offerPhone-error {
   position: absolute;
   bottom: 148px;
   left: 254px;
@@ -407,6 +407,7 @@ img {
   }
   .offer__title {
     line-height: 1.2;
+    font-size: 18px;
   }
   .offer__button {
     font-size: 14px;
@@ -419,7 +420,6 @@ img {
 }
 
 .portfolio__title {
-  margin: auto;
   margin-bottom: 100px;
   font-size: 30px;
   line-height: 45px;
@@ -459,12 +459,27 @@ img {
   }
 }
 
+@media (max-width: 720px) {
+  .portfolio__title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .portfolio-section {
+    padding: 0;
+    padding-top: 43px;
+  }
+  .portfolio__arrows {
+    padding-bottom: 64px;
+  }
+}
+
 .price-section {
   padding: 90px;
 }
 
 .price__title {
   margin: auto;
+  width: 550px;
   margin-bottom: 40px;
   line-height: 45px;
   font-size: 30px;
@@ -581,10 +596,35 @@ img {
 
 @media (max-width: 860px) {
   .price__title {
+    margin: auto;
     margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 1.2;
   }
   .price__subtitle {
     margin-bottom: 61px;
+  }
+}
+
+@media (max-width: 720px) {
+  .price-section {
+    margin: auto;
+    padding: 0;
+    padding-top: 43px;
+  }
+  .price__title {
+    margin: auto;
+    width: 270px;
+    font-size: 19px;
+    line-height: 1.2;
+  }
+  .price__subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+  .card__title {
+    font-size: 14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -637,6 +677,8 @@ img {
 }
 
 .steps__title {
+  width: 670px;
+  margin: auto;
   margin-top: 40px;
   font-size: 30px;
   line-height: 45px;
@@ -665,11 +707,24 @@ img {
   .step:after {
     display: none;
   }
+  .steps {
+    text-align: center;
+  }
   .steps-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .steps__title {
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.2;
+    width: 280px;
+    margin-bottom: 27px;
+  }
+  .steps__subtitle {
+    font-size: 14px;
   }
 }
 
@@ -733,8 +788,10 @@ img {
 }
 
 .interview__title {
+  width: 550px;
   font-size: 22px;
   line-height: 33px;
+  margin-top: 103px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   margin-bottom: 50px;
@@ -758,7 +815,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -782,6 +839,7 @@ img {
 .form__title {
   font-size: 22px;
   line-height: 33px;
+  margin-top: 103px;
   margin-bottom: 52px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -861,18 +919,25 @@ img {
   .interview__title {
     font-size: 18px;
     margin-bottom: 16px;
+    margin-top: 0;
     line-height: 25.35px;
+    width: 250px;
   }
   .interview__subtitle {
     margin-bottom: 39px;
     font-size: 14px;
+    width: 180px;
   }
   .interview-list__counter {
     min-width: 35px;
     min-height: 35px;
   }
   .form__title {
+    margin: auto;
+    width: 300px;
+    margin-top: 0;
     font-size: 18px;
+    padding-top: 43px;
     margin-bottom: 27px;
     line-height: 25.35px;
   }
@@ -882,6 +947,10 @@ img {
   }
   .form__description {
     font-size: 14px;
+    margin-bottom: 34px;
+    width: 140px;
+    margin: auto;
+    line-height: 1.5;
     margin-bottom: 34px;
   }
 }
