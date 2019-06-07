@@ -32,27 +32,27 @@ $(document).ready(function(){
     }
   });
   //Валидация формы offer
-  // $('#offer-form').validate({
-  //   rules: {
-  //     phone: {
-  //       required: true,
-  //     },
-  //     username: {
-  //       required: true,
-  //       minlength: 2,
-  //       maxlength: 15,
-  //     }
-  //   },
-  //   messages: {
-  //     phone: {
-  //       required: "Укажите телефон",
-  //     },
-  //     username: {
-  //       required: "Обязательное поле",
-  //       minlength: jQuery.validator.format("Минимальное кол-во символов: {0}"),
-  //     }
-  //   }
-  // });
+  $('#offer-form').validate({
+    rules: {
+      phone: {
+        required: true,
+      },
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      }
+    },
+    messages: {
+      phone: {
+        required: "Введите телефон",
+      },
+      username: {
+        required: "Заполните поле",
+        minlength: jQuery.validator.format("Минимальное кол-во символов: {0}"),
+      }
+    }
+  });
     //Скрипт слайдера
   $('.slider').slick({ 
     slidesToShow: 3,

@@ -80,6 +80,7 @@ img {
   font-size: 15px;
   border-radius: 10px;
   color: #999999;
+  position: relative;
 }
 
 .input:focus {
@@ -93,15 +94,6 @@ img {
 
 .error {
   color: #333333;
-}
-
-.messages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .navbar {
@@ -367,6 +359,20 @@ img {
   color: #333333;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+}
+
+#username-error {
+  position: absolute;
+  bottom: 148px;
+  left: 0;
+  font-size: 15px;
+}
+
+#phone-error {
+  position: absolute;
+  bottom: 148px;
+  left: 254px;
+  font-size: 15px;
 }
 
 @media (max-width: 1140px) {
@@ -686,7 +692,7 @@ img {
 .brif {
   background-image: url("../img/brif/background-color-bg.jpg"), url("../img/brif/background-bg.jpg");
   background-position: left center, right center;
-  background-size: 50%, contain;
+  background-size: 50%, cover;
   background-repeat: repeat-y, no-repeat;
 }
 
@@ -943,9 +949,41 @@ img {
   font-weight: 700;
 }
 
+.contacts-list__text {
+  line-height: 26px;
+}
+
 .contacts-list__phone {
   text-decoration: none;
   color: #333333;
+}
+
+@media (max-width: 1140px) {
+  .contacts {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 960px) {
+  .contacts {
+    padding-top: 50px;
+  }
+  .contacts__title {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: block;
+  }
+  .map {
+    display: block;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
 
 .modal {

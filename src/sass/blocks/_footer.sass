@@ -32,9 +32,30 @@
       margin-bottom: 39px
     &__bold-text
       +bold
+    &__text
+      line-height: 26px
     &__phone
       text-decoration: none
       color: $text-color
+@media (max-width:1140px)
+  .contacts
+    padding-left: 100px
+@media (max-width:960px)
+  .contacts
+    padding-top: 50px
+    &__title
+      margin-bottom: 60px
+@media (max-width:720px)
+  .contacts
+    flex-basis: 100%
+    display: block
+  .map
+    display: block
+    flex-basis: 100%
+  
+      
+      
+  
 
 
   
