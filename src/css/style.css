@@ -874,6 +874,7 @@ img {
     padding-right: 30px;
   }
   .interview__title {
+    width: auto;
     font-size: 20px;
     margin-bottom: 15px;
   }
@@ -1050,14 +1051,19 @@ img {
 
 @media (max-width: 720px) {
   .contacts {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    display: block;
+    padding-left: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .contacts__title {
+    width: 350px;
+    margin-bottom: 39px;
   }
   .map {
-    display: block;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    position: absolute;
+    width: 100%;
+    top: 530px;
   }
 }
 
