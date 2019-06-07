@@ -414,6 +414,16 @@ img {
   }
 }
 
+#offerUsername-error {
+  all: unset;
+  margin-left: 20px;
+}
+
+#offerPhone-error {
+  all: unset;
+  margin-left: 20px;
+}
+
 .portfolio {
   background: #f5f5f5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
   background-size: 50%;
