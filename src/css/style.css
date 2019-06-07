@@ -829,7 +829,7 @@ img {
 .interview-list__counter {
   display: inline-block;
   text-align: center;
-  line-height: 35px;
+  line-height: 30px;
   height: 35px;
   width: 35px;
   border: 2px solid #333333;
@@ -1051,7 +1051,6 @@ img {
 
 @media (max-width: 720px) {
   .contacts {
-    padding-left: 24px;
     position: absolute;
     top: 0;
     left: 0;
