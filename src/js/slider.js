@@ -1,6 +1,6 @@
 $(document).ready(function(){
     //Маска для телефона
-  $(".phone").mask("+375 (99) 999-99-99");
+  $(".phone").mask("8 (999) 999-99-99");
   //Валидация формы brif
   $('#brif-form').validate({
     rules: {
