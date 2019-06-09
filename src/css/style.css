@@ -750,6 +750,66 @@ img {
   }
 }
 
+.text {
+  background-color: #ffc000;
+}
+
+.text-block {
+  padding: 100px;
+  text-align: center;
+}
+
+.text__paragraf {
+  font-size: 32px;
+  line-height: 50px;
+  margin: auto;
+}
+
+.description-block {
+  padding-top: 127px;
+  padding-bottom: 228px;
+  text-align: center;
+}
+
+.description__img {
+  margin-bottom: 127px;
+}
+
+.description__images {
+  padding-right: 30px;
+  width: 370px;
+  height: 410px;
+}
+
+.description__images:last-child {
+  padding-right: 0;
+}
+
+.description__title {
+  font-size: 30px;
+  line-height: 45px;
+  margin: auto;
+  width: 642px;
+  margin-bottom: 99px;
+}
+
+.description-document {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.description__text {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.images__img {
+  margin-bottom: 41px;
+}
+
 .brif {
   background-image: url("../img/brif/background-color-bg.jpg"), url("../img/brif/background-bg.jpg");
   background-position: left center, right center;
