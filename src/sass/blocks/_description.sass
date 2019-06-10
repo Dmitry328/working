@@ -4,19 +4,23 @@
     padding-bottom: 228px
     text-align: center
   &__img
+    display: flex
+    justify-content: space-between
+    margin: auto
     margin-bottom: 127px
   &__images
-    padding-right: 30px
+    // padding-right: 30px
     width: 370px
     height: 410px
-    &:last-child
-      padding-right: 0
+    // &:last-child
+    //   padding-right: 0
   &__title
     font-size: 30px
     line-height: 45px
     margin: auto
-    width: 642px
+    width: 650px
     margin-bottom: 99px
+    +bold
   &-document
     display: flex
     justify-content: space-around
@@ -26,6 +30,43 @@
 .images
   &__img
     margin-bottom: 41px
+@media (max-width:1180px)
+  .description
+    &__img
+      display: flex
+      flex-wrap: wrap
+    &__images
+      margin: auto
+      margin-bottom: 30px
+@media (max-width:960px)
+  .description
+    &-block
+      padding-bottom: 90px
+    &__title
+      width: 700px
+    &-document
+      display: block
+    &__text
+      font-size: 14px
+      line-height: 1.4
+  .document
+    &-block
+      margin-bottom: 44px
+  .images
+    &__img
+      margin-bottom: 31px
+    
+    
+
+@media (max-width:720px)
+  .description
+    &__title
+      width: 275px
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 49px
+
+
 
 
 

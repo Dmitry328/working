@@ -765,6 +765,24 @@ img {
   margin: auto;
 }
 
+@media (max-width: 960px) {
+  .text-block {
+    padding: 75px 10px;
+  }
+  .text__paragraf {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .text__paragraf {
+    width: 255px;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
 .description-block {
   padding-top: 127px;
   padding-bottom: 228px;
@@ -772,25 +790,29 @@ img {
 }
 
 .description__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
   margin-bottom: 127px;
 }
 
 .description__images {
-  padding-right: 30px;
   width: 370px;
   height: 410px;
-}
-
-.description__images:last-child {
-  padding-right: 0;
 }
 
 .description__title {
   font-size: 30px;
   line-height: 45px;
   margin: auto;
-  width: 642px;
+  width: 650px;
   margin-bottom: 99px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .description-document {
@@ -808,6 +830,51 @@ img {
 
 .images__img {
   margin-bottom: 41px;
+}
+
+@media (max-width: 1180px) {
+  .description__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .description__images {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .description-block {
+    padding-bottom: 90px;
+  }
+  .description__title {
+    width: 700px;
+  }
+  .description-document {
+    display: block;
+  }
+  .description__text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .document-block {
+    margin-bottom: 44px;
+  }
+  .images__img {
+    margin-bottom: 31px;
+  }
+}
+
+@media (max-width: 720px) {
+  .description__title {
+    width: 275px;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 49px;
+  }
 }
 
 .brif {
@@ -999,6 +1066,9 @@ img {
   .interview-list__counter {
     min-width: 35px;
     min-height: 35px;
+  }
+  .interview-list__text {
+    min-width: 235px;
   }
   .form__title {
     margin: auto;
