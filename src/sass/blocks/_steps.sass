@@ -47,23 +47,6 @@
       display: flex
       flex-wrap: wrap
       margin-bottom: 97px
-@media (max-width:720px)
-  .step
-    margin-bottom: 30px
-    &:after
-      display: none
-    &s
-      text-align: center
-      &-block
-        flex-direction: column 
-      &__title
-        margin: auto
-        font-size: 18px
-        line-height: 1.2
-        width: 280px
-        margin-bottom: 27px
-      &__subtitle
-        font-size: 14px
 @media (max-width:1140px)
   .step
     margin-bottom: 30px
@@ -73,3 +56,33 @@
     &s
       &-block
         justify-content: center 
+@media (max-width:720px)
+  .step
+    width: 95%
+    &:after
+      display: none
+    &__image
+      margin-top: 0px
+      margin-bottom: 25px
+    &__text
+      font-size: 12px
+      line-height: 16px
+      width: 130px
+      &:nth-child(3)
+        min-width: 128px
+
+    &s
+      text-align: center
+      &-block
+        flex-direction: column 
+        margin-bottom: 45px
+      &__title
+        padding-top: 25px
+        margin: auto
+        font-size: 18px
+        line-height: 1.2
+        width: 280px
+        margin-bottom: 27px
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 30px
