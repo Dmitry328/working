@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,8EAA8E;AAE9E,UAAU,CAAV,MAAU;EACR,IAAI;IACF,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,wBAAwB,CAAC,0BAA0B;;EAGhE,EAAE;IACA,OAAO,EAAE,CAAC;IACV,SAAS,EAAE,oBAAoB;;;;AAInC,AAAA,OAAO,CAAC;EACN,cAAc,EAAE,MAAM;CACvB",
+    "sources": [
+        "../sass/animate/specials/rollIn.scss"
+    ],
+    "names": [],
+    "file": "rollIn.css"
+}
