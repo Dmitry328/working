@@ -1216,6 +1216,7 @@ img {
 .card__link {
   display: inline-block;
   margin-bottom: 10px;
+  cursor: pointer;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
   text-decoration: none;
@@ -1902,7 +1903,7 @@ img {
 @media (max-width: 720px) {
   .contacts {
     position: absolute;
-    padding-left: 24px;
+    padding: 3000px;
     top: -5px;
     left: 0;
   }
