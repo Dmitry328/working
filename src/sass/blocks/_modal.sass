@@ -11,12 +11,17 @@
   &-dialog
     position: relative
     margin: auto
-    max-width: 450px  
+    max-width: 500px  
     width: 90%
     min-width: 200px
     background-color: $white-color
     padding: 40px
     &__close
+      outline-style: none
+      height: 40px
+      width: 40px
+      background-color: $main-color
+      border-radius: 10px
       position: absolute
       top: 0
       right: 0
@@ -25,4 +30,57 @@
   &__form
     padding-left: 0
     margin-top: 10px
+  &__title
+    margin-top: 20px
+  &__subtitle
+    margin-bottom: 20px
+  &__description
+    margin-bottom: 30px
+
+// .image 
+// 	margin:30px
+// 	float:left
+// 	cursor:pointer
+// 	max-height:100px
+
+
+// .popup 
+// 	position: absolute
+// 	height:100%
+// 	width:100%
+// 	top:0
+// 	left:0
+// 	display:none
+// 	text-align:center
+
+
+// .popup_bg 
+// 	background:rgba(0,0,0,0.4)
+// 	position:absolute
+// 	z-index:1
+// 	height:100%
+// 	width:100%
+
+
+
+// .popup_img 
+// 	position: relative
+// 	margin:0 auto
+// 	z-index:2
+// 	max-height:94%
+// 	max-width:94%
+// 	margin:1% 0 0 0
+
+@media (max-width:567px)
+  .modal
+    &__title
+      width: 230px
+// .form
+//   &__title
+//     margin-top: 20px
+//     margin-bottom: 30px
+//   &__subtitle
+//     margin-bottom: 20px
+//   &__description
+//     margin-bottom: 50px
       

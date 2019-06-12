@@ -1056,7 +1056,7 @@ img {
     font-size: 18px;
   }
   .offer__button {
-    padding: 15px 25px;
+    padding: 25px 25px;
     margin-bottom: 20px;
   }
   .offer__input {
@@ -1073,6 +1073,12 @@ img {
   }
   #offerPhone-error {
     all: unset;
+  }
+}
+
+@media (max-width: 568px) {
+  .offer__button {
+    padding: 15px 25px;
   }
 }
 
@@ -1983,7 +1989,7 @@ img {
 .modal-dialog {
   position: relative;
   margin: auto;
-  max-width: 450px;
+  max-width: 500px;
   width: 90%;
   min-width: 200px;
   background-color: #ffffff;
@@ -1991,6 +1997,11 @@ img {
 }
 
 .modal-dialog__close {
+  outline-style: none;
+  height: 40px;
+  width: 40px;
+  background-color: #ffd200;
+  border-radius: 10px;
   position: absolute;
   top: 0;
   right: 0;
@@ -2003,5 +2014,23 @@ img {
 .modal__form {
   padding-left: 0;
   margin-top: 10px;
+}
+
+.modal__title {
+  margin-top: 20px;
+}
+
+.modal__subtitle {
+  margin-bottom: 20px;
+}
+
+.modal__description {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 567px) {
+  .modal__title {
+    width: 230px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
