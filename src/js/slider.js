@@ -53,6 +53,19 @@ $(document).ready(function(){
       }
     }
   });
+
+  //показывать карту только когда до нее докрутили
+  var steps = $('.steps');
+  var stepsTop = steps.offset().top;
+  $(window).bind('scroll', function () {
+    var windiwTop = $(this).scrollTop();
+    if (windiwTop>stepsTop) {
+      console.log('Кукурузка');
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afe0dfc53038a9fbca60b0adffbfba4d9bff05a2ec63a14b655c56deefc2c68ba&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>')
+      $(window).unbind('scroll')
+    }
+  });
+
     //Скрипт слайдера
   $('.slider').slick({ 
     slidesToShow: 3,
