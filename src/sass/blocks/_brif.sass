@@ -98,6 +98,16 @@
       margin-bottom: 30px
     &__description
       display: block
+@media (max-width:960px)
+  .interview
+    &__title
+      margin-top: 50px
+  .form
+    &__title
+      margin-top: 50px
+    &__description
+      margin-bottom: 50px
+
 @media (max-width:720px)
   .brif
     background-image: url('../img/brif/background-color-bg.jpg'), url('../img/brif/background-bg.jpg')
@@ -105,8 +115,9 @@
     background-size: 100% 50%, cover
     background-repeat: repeat-x, no-repeat
     &__interview
+      margin: auto
       padding-top: 50px
-      padding-right: 15px
+      padding-right: 0px
     &-block
       flex-direction: column
     &__form 
@@ -160,6 +171,10 @@
       margin: auto
       line-height: 1.5
       margin-bottom: 34px
+@media (max-width:720px)
+  .brif
+    &__interview
+
 
 
 

@@ -43,16 +43,18 @@
 @media (max-width:960px)
   .contacts
     padding-top: 50px
+    padding-left: 80px
     &__title
       margin-bottom: 60px
+      font-size: 18px
 @media (max-width:720px)
   .contacts
-    position: absolute
-    padding: 3000px
-    top: -5px
-    left: 0
+    flex-basis: 100%
+    padding-top: 70px
+    padding-left: 110px
+    flex: center
     &__title
-      width: 350px
+      min-width: 490px
       margin-bottom: 28px 
       font-size: 18px
       line-height: 23px
@@ -61,12 +63,25 @@
         margin-right: 12px
       &__item
         margin-bottom: 30px
+        margin-left: 20px
   .map
     position: absolute 
     width: 100%
     top: 530px
-     
-  
+@media (max-width:567px)
+  .contacts
+    width: 350px
+    flex-basis: 100%
+    padding-top: 45px
+    padding-left: 50px
+    &__title
+      min-width: 350px
+      padding-left: 23px
+    &-list
+      &__item
+        margin-left: 20px
+      
+
       
       
   
