@@ -3,7 +3,7 @@ $(document).ready(function() {
   var modal = $('#modal');
   var close = $('#close');
   var card = $('.card__link')
-  var butt = $('.imgs')
+  var modalTankButton = $('#modal__button')
 
 
 //   butt.on('click', function(){	// Событие клика на маленькое изображение
@@ -18,7 +18,7 @@ $(document).ready(function() {
 //     }, 800);
 //   });
 // });
- 
+
   button.on('click', function() {
     modal.addClass('modal_active');
   });

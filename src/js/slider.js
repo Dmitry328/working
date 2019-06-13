@@ -1,6 +1,38 @@
 $(document).ready(function(){
     //Маска для телефона
   $(".phone").mask("8 (999) 999-99-99");
+
+
+  // Валидация формы modal
+  $('#modal-form').validate({
+    rules: {
+      modalPhone: {
+        required: true,
+      },
+      modalUsername: {
+        required: true,
+        minlength: 2,
+        maxlength: 15,
+      },
+      modalEmail: {
+        required: true,
+        email: true,
+      }
+    },
+    messages: {
+      modalPhone: {
+        required: "Укажите телефон",
+      },
+      modalUsername: {
+        required: "Обязательное поле",
+        minlength: jQuery.validator.format("Минимальное кол-во символов: {0}"),
+      },
+      modalEmail: {
+        required: "Обязательное поле",
+        email: "Введите корректный email",
+      }
+    }
+  });
   //Валидация формы brif
   $('#brif-form').validate({
     rules: {

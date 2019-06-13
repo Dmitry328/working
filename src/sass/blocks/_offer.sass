@@ -78,15 +78,22 @@
       width: 100%
       margin-bottom: 8px
       padding-right: 40px
+  #offerUsername-error
+    all: unset
+  #offerPhone-error
+    all: unset
       
 @media (max-width:960px)
   .offer
+    &-block
+      padding-right: 50px
     &__bottom-title
       display: block
     &__left-text
       display: block
       margin-bottom: 18px
       margin-right: 10px
+
 
 @media (max-width:720px)
   .offer
@@ -108,15 +115,18 @@
       margin-left: 5px
     &__left-text
       margin-bottom: 10px
-  #offerUsername-error
-    all: unset
-  #offerPhone-error
-    all: unset
+
 
 @media (max-width:568px)
   .offer
     &__button
+      margin-bottom: 23px
       padding: 15px 25px
+    &__subtitle
+      font-size: 14px
+      margin-bottom: 25px
+    &__input
+      margin-bottom: 10px
 
 
 

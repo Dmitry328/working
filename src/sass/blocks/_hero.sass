@@ -46,15 +46,36 @@
       margin-bottom: 40px
     &-text
       padding-right: 10px
+@media (max-width:960px)
+  .hero
+    &-text
+      &__title
+        width: 652px
+        margin: auto
+        margin-bottom: 40px
+      &__subtitle
+        display: block
+        width: 463px
+        margin: auto
+        margin-bottom: 65px
+    &-list
+      display: block
+      width: 300px
+      margin: auto
+      margin-bottom: 40px
+    &-image
+      margin: auto
 @media (max-width:720px)
   .hero
     padding: 30px 0
     &-text
       &__title
+        width: 517px
         font-size: 24px
         line-height: 1.2
         margin-bottom: 12px
       &__subtitle
+        width: 371px
         font-size: 16px
         margin-bottom: 28px
     &-list
@@ -67,4 +88,24 @@
       &__image
         min-width: 40px
         margin-right: 15px
+@media (max-width:720px)
+  .hero
+    &-text
+      &__title
+        width: 274px
+        padding-top: 18px
+        margin-bottom: 10px
+      &__subtitle
+        width: 197px
+      &-list
+        margin-left: 4px
+@media (max-width:330px)
+  .hero
+    &-text
+      &__subtitle
+        margin-left: 7px
+
+
+
+
 
