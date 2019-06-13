@@ -64,6 +64,14 @@ $(document).ready(function(){
       $(window).unbind('scroll')
     }
   });
+
+  $('.imgs').magnificPopup({
+    type: 'image',
+    gallery : {
+      enabled: true
+    }
+    
+  });
     
 
     //Скрипт слайдера
